@@ -1,3 +1,5 @@
+import '../css/Header.css'
+
 export const HeaderMain = () => {
     return (
         <div id="headerMain-container">
