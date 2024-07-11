@@ -1,4 +1,4 @@
-import { HeaderMain } from "./HeaderMain";
+import { HeaderMain } from "./HeaderMain"
 
 export const Header = () => {
     return (
