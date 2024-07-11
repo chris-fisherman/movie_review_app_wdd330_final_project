@@ -1,6 +1,6 @@
 # Movie Review App
 
-This is a final propject for WDD330 Web Frontend Development II course.
+This is a Final Project for WDD330 Web Frontend Development II course.
 
 ## 🚀 Deploy Link
 
