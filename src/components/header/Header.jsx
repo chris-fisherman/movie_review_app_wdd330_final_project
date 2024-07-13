@@ -7,11 +7,9 @@ export const Header = () => {
     return (
         <header id="header">
             <div id="headerMain-container">
-                <h1 id="headerMain-logo">Logo</h1>
+                <Link to="/"><img id="headerMain-logo" src="../../assets/bella_vista_logo_complete.webp" alt="Logo" /></Link>
 
-                <nav id="headerMain-nav">
-                    <h2>My List</h2>
-                </nav>
+                <h2 id="headerMain-search">Search</h2>
             </div>
         </header>
     )

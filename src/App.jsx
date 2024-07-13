@@ -1,11 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import { Header } from './components/header/Header'
+
 import './css/App.css'
 
 function App() {
   return (
     <div id='App'>
       <Router>
+        <Header />
+
         <Routes>
           <Route index element={<h1>Home Page</h1>} />
           <Route path="review/:id" element={<h1>Detail Page Review</h1>} />
