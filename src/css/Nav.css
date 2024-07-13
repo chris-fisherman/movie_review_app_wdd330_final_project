@@ -1,0 +1,27 @@
+:root {
+    --main-color: #8e44ad;
+    --main-color2: #9b59b6;
+}
+
+#nav {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 80px;
+    align-content: center;
+
+    position: fixed;
+    bottom: 0;
+}
+
+#nav #nav-container {
+    margin: 0 15px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+}
