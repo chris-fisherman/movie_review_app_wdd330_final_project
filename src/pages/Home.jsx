@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 
 import "../css/Home.css"
 
@@ -16,7 +18,24 @@ export const Home = () => {
 
     return (
         <>
-            Home Page
+            <section id="banner">
+                <Carousel
+                    showThumbs={false}
+                    autoPlay={false}
+                    transitionTime={3}
+                    infiniteLoop={false}
+                    showStatus={false}
+                    renderIndicator={false}
+                >
+                    {
+                        popularMovies.map( movie => (
+                            <div id="banner-image">
+                                <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
+                            </div>
+                        ))
+                    }
+                </Carousel>
+            </section>
         </>
     )
 }
