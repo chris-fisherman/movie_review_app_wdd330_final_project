@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { Header } from './components/Header.jsx'
+import { Header } from './components/header/Header.jsx'
 import App from './App.jsx'
 
 import './css/main.css'

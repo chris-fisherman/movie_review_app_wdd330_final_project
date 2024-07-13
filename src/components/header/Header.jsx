@@ -1,6 +1,6 @@
 import { HeaderMain } from "./HeaderMain"
 
-import '../css/Header.css'
+import '../../css/Header.css'
 
 export const Header = () => {
     return (
