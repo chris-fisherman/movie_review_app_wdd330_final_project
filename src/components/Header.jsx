@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
+import { Nav } from "./Nav"
+
 import '../css/Header.css'
 
 export const Header = () => {
@@ -11,6 +13,8 @@ export const Header = () => {
 
                 <h2 id="headerMain-search">Search</h2>
             </div>
+
+            <Nav />
         </header>
     )
 }
