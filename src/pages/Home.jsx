@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
 import "../css/Home.css"
+import { Link } from "react-router-dom"
 
 export const Home = () => {
 
@@ -18,7 +19,7 @@ export const Home = () => {
 
     return (
         <>
-            <section id="banner">
+            <section className="banner">
                 <Carousel
                     showThumbs={false}
                     autoPlay={false}
@@ -29,9 +30,22 @@ export const Home = () => {
                 >
                     {
                         popularMovies.map( movie => (
-                            <div id="banner-image">
-                                <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
-                            </div>
+                            <Link to={`/review/${movie.id}`}>
+                                <div className="bannerImage">
+                                    <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
+                                </div>
+
+                                <div className="bannerImage-overlay">
+                                    <div className="bannerImage-title">{movie ? movie.original_title: ""}</div>
+                                    <div className="bannerImage-runtime">
+                                        {movie ? movie.release_date: ""}
+                                        <span className="bannerImage-rating">
+                                            {movie ? movie.vote_average: ""}
+                                        </span>
+                                    </div>
+                                    <div className="bannerImage_description">{movie ? movie.overview: ""}</div>
+                                </div>
+                            </Link>
                         ))
                     }
                 </Carousel>
