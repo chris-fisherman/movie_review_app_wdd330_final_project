@@ -1,8 +1,13 @@
+:root {
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac5;
+    --background-main: #121212;
+    --background-secondary: #1f1b24;
+    --font-color: #eef3f5;
+}
+
 #header {
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
 }
 
 #headerMain-container {
@@ -13,5 +18,5 @@
 
     margin: 0 15px;
 
-    color: white;
+    color: var(--font-color);
 }

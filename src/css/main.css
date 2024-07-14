@@ -1,5 +1,14 @@
 * {
     font-family: "Inter", sans-serif;
+    background-color: var(--background-main);
+}
+
+:root {
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac5;
+    --background-main: #121212;
+    --background-secondary: #1f1b24;
+    --font-color: #eef3f5;
 }
 
 body {
