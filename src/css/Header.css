@@ -20,3 +20,8 @@
 
     color: var(--font-color);
 }
+
+#headerMain-logo {
+    text-decoration: none;
+    color: var(--font-color);
+}

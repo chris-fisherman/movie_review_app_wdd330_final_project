@@ -30,20 +30,27 @@ export const Home = () => {
                 >
                     {
                         popularMovies.map( movie => (
-                            <Link to={`/review/${movie.id}`}>
+                            <Link className="bannerLink" to={`/review/${movie.id}`}>
                                 <div className="bannerImage">
                                     <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                                 </div>
+                            
 
                                 <div className="bannerImage-overlay">
-                                    <div className="bannerImage-title">{movie ? movie.original_title: ""}</div>
+                                    <h1 className="bannerImage-title">{movie ? movie.original_title: ""}</h1>
                                     <div className="bannerImage-runtime">
-                                        {movie ? movie.release_date: ""}
-                                        <span className="bannerImage-rating">
-                                            {movie ? movie.vote_average: ""}
-                                        </span>
+                                        <div className="bannerImage-rating-container">
+                                            <span className="bannerImage-rating">
+                                                {movie ? movie.vote_average: ""}
+                                            </span>
+                                            <span className="bannerImage-rating-total">
+                                                /10
+                                            </span>
+                                        </div>
+                                        
+                                        <span className="bannerImage-data">{movie ? movie.release_date: ""}</span>
                                     </div>
-                                    <div className="bannerImage_description">{movie ? movie.overview: ""}</div>
+                                    {/* <div className="bannerImage_description">{movie ? movie.overview: ""}</div> */}
                                 </div>
                             </Link>
                         ))
