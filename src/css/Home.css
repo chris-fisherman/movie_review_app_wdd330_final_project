@@ -1,10 +1,12 @@
 :root {
-    --primary-color: #bb86fc;
-    --secondary-color: #03dac5;
-    --third-color: #f39c12;
-    --background-main: #121212;
-    --background-secondary: #1f1b24;
-    --font-color: #eef3f5;
+    --primary: #52a5e0;
+    --secondary: #f39c12;
+    --body: #192229;
+    --container: #212e36;
+    --border: #2a3b47;
+    --title: #eef3f5;
+    --content: #c8cdd0;
+    --sub-content: #a0a7ac;
 }
 
 .bannerImage {
@@ -18,14 +20,14 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, var(--background-main), transparent);
+    background-image: linear-gradient(to top, var(--body), transparent);
 }
 
 .bannerImage-overlay {
     position: absolute;
     left: 15px;
     bottom: 30px;
-    color: var(--font-color);
+    color: var(--title);
     text-align: left;
     width: 80%;
 }
@@ -42,7 +44,7 @@
 }
 
 .bannerImage-rating, .bannerImage-rating-total {
-    color: var(--third-color);
+    color: var(--secondary);
 }
 
 .bannerImage-rating {
@@ -54,7 +56,7 @@
 }
 
 .bannerImage-data {
-    color: #c8cdd0;
+    color: var(--content);
 }
 
 

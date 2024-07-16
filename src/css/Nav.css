@@ -1,13 +1,16 @@
 :root {
-    --primary-color: #bb86fc;
-    --secondary-color: #03dac5;
-    --background-main: #121212;
-    --background-secondary: #1f1b24;
-    --font-color: #eef3f5;
+    --primary: #52a5e0;
+    --secondary: #f39c12;
+    --body: #192229;
+    --container: #212e36;
+    --border: #2a3b47;
+    --title: #eef3f5;
+    --content: #c8cdd0;
+    --sub-content: #a0a7ac;
 }
 
 #nav {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     width: 100%;
     height: 80px;
     align-content: center;
@@ -17,7 +20,7 @@
 }
 
 #nav #nav-container {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     margin: 0 15px;
     
     display: flex;
@@ -26,7 +29,7 @@
 }
 
 #nav a {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--background-main);
     text-decoration: none;
 }
