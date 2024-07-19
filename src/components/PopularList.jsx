@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 
 import { Cards } from "./Card"
 
-import "../css/PopularList.css"
+import "../css/HomeLists.css"
 
 export const PopularList = () => {
     const [ popularMovies, setPopularMovies ] = useState([])
