@@ -8,9 +8,8 @@ export const Nav = () => {
         <nav id="nav">
             <div id="nav-container">
                 <Link to="/">Home</Link>
-                <Link to="/movies/top_100">Top Movies</Link>
-                <Link to="/series/top_100">Top Series</Link>
-                <Link to="/myList">My List</Link>
+                <Link to="/movies/top_rated">Top Rated</Link>
+                <Link to="/movies/upcoming">Upcoming</Link>
             </div>     
         </nav>
     )

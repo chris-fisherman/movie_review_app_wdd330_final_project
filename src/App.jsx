@@ -15,9 +15,9 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="review/:id" element={<h1>Detail Page Review</h1>} />
-          <Route path="movies/:type" element={<h1>Top 100 Movies</h1>} />
+          {/* <Route path="movies/:type" element={<h1>Top 100 Movies</h1>} /> */}
           <Route path="series/:type" element={<h1>Top 100 Series</h1>} />
-          <Route path="myList" element={<MovieList />} />
+          <Route path="movies/:type" element={<MovieList />} />
           <Route path="/*" element={<h1>Error Page</h1>} />
         </Routes>
       </Router>
