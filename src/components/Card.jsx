@@ -26,7 +26,7 @@ export const Cards = ({movie}) => {
                 </SkeletonTheme>
             </div>
             :
-            <Link to={ `movie/${movie.id}` }>
+            <Link to={ `/review/${movie.id}` }>
                 <div className="cards">
                     <img className="cards-img" src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`} alt="Card Image" />
                     <div className="cards-overlay">
