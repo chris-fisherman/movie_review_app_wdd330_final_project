@@ -1,0 +1,37 @@
+:root {
+    --primary: #52a5e0;
+    --secondary: #f39c12;
+    --body: #101417;
+    --container: #181c1f;
+    --container-clearer: #1f2a30;
+    --border: #2a3b47;
+    --title: #dfe3e6;
+    --sub-title: #8fcdf1;
+    --content: #c8cdd0;
+    --sub-content: #a0a7ac;
+    --icons-white: #bfc8cf;
+    --icons-blue: #89cef7;
+    --icons-background: #005677;
+
+    --title-size: 20px;
+    --subtitle-size: 16px;
+    --content-size: 12px;
+}
+
+.popularList {
+    margin: 30px 15px;
+}
+
+.popularList-title {
+    color: var(--content);
+    font-size: var(--title-size);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.popularList-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: scroll;
+}
