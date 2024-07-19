@@ -36,7 +36,7 @@ export const Home = () => {
                 >
                     {
                         popularMovies.map( movie => (
-                            <Link className="bannerLink" to={`/review/${movie.id}`}>
+                            <Link className="bannerLink" to={`/movie/${movie.id}`}>
                                 <div className="bannerImage">
                                     <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                                 </div>

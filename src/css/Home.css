@@ -12,10 +12,18 @@
     --icons-white: #bfc8cf;
     --icons-blue: #89cef7;
     --icons-background: #005677;
+
+    --title-size: 20px;
+    --subtitle-size: 16px;
+    --content-size: 12px;
 }
 
 .bannerImage {
     position: relative;
+}
+
+.bannerImage img {
+    width: 100%;
 }
 
 .bannerImage::after {
@@ -35,10 +43,12 @@
     color: var(--title);
     text-align: left;
     width: 80%;
+    z-index: 3;
 }
 
 .bannerImage-title {
     margin-bottom: 10px;
+    font-size: var(--title-size);
 }
 
 .bannerImage-runtime {
@@ -48,15 +58,15 @@
     gap: 8px;
 }
 
-.bannerImage-rating, .bannerImage-rating-total {
+.bannerImage-rating, .bannerImage-rating-total, .detail-rating, .detail-rating-total {
     color: var(--secondary);
 }
 
-.bannerImage-rating {
+.bannerImage-rating, .detail-rating {
     font-weight: bold;
 }
 
-.bannerImage-rating-total, .bannerImage-data {
+.bannerImage-rating-total, .bannerImage-data, .detail-rating-total, .detail-rating {
     font-size: 12px;
 }
 
