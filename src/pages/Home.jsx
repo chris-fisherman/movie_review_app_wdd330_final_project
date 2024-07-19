@@ -7,6 +7,7 @@ import { TopRatedList } from "../components/TopRatedList"
 
 import "../css/Home.css"
 import { Link } from "react-router-dom"
+import { UpcomingList } from "../components/UpcomingList"
 
 export const Home = () => {
 
@@ -63,7 +64,11 @@ export const Home = () => {
 
             <PopularList />
 
+            <UpcomingList />
+
             <TopRatedList />
+
+            
         </>
     )
 }

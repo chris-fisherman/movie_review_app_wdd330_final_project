@@ -18,18 +18,18 @@
     --content-size: 12px;
 }
 
-.popularList, .ratedList {
+.popularList, .ratedList, .upcomingList {
     margin: 30px 15px;
 }
 
-.popularList-title, .ratedList-title {
+.popularList-title, .ratedList-title, .upcomingList-title {
     color: var(--content);
     font-size: var(--title-size);
     font-weight: 500;
     margin-bottom: 25px;
 }
 
-.popularList-cards, .ratedList-cards {
+.popularList-cards, .ratedList-cards, .upcomingList-cards {
     display: flex;
     flex-direction: row;
     gap: 15px;
