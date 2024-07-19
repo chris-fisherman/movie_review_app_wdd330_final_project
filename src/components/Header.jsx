@@ -12,7 +12,7 @@ export const Header = () => {
         <header id="header">
             <div id="headerMain-container">
                 <Link to="/" id="headerMain-logo">
-                    <img src={logo} alt="Logo" width="100" />
+                    <img src={logo} alt="Header Logo" width="100" />
                 </Link>
             </div>
 

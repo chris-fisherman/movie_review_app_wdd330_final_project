@@ -3,11 +3,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
 import { PopularList } from "../components/PopularList"
+import { UpcomingList } from "../components/UpcomingList"
 import { TopRatedList } from "../components/TopRatedList"
+import { Footer } from "../components/Footer"
 
 import "../css/Home.css"
 import { Link } from "react-router-dom"
-import { UpcomingList } from "../components/UpcomingList"
+
 
 export const Home = () => {
 
@@ -67,6 +69,8 @@ export const Home = () => {
             <UpcomingList />
 
             <TopRatedList />
+
+            <Footer />
 
             
         </>
