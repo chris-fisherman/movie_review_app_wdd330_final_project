@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
+import { Link } from "react-router-dom"
 
 import { PopularList } from "../components/PopularList"
 import { UpcomingList } from "../components/UpcomingList"
@@ -8,8 +9,6 @@ import { TopRatedList } from "../components/TopRatedList"
 import { Footer } from "../components/Footer"
 
 import "../css/Home.css"
-import { Link } from "react-router-dom"
-
 
 export const Home = () => {
 
